@@ -36,6 +36,7 @@ router.post('/search', async (req, res) => {
           await newPost.save((errSave, dataSave) => {
             if (errSave) utils.log('err in find post', errSave, 2);
             utils.log('err in save post', dataSave, 2);
+            // add sms new saved post here
           });
         } else {
           utils.log('Post already stored in DB', dataFind, 2);
