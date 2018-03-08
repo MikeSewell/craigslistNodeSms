@@ -1,0 +1,12 @@
+<h1>Results</h1>
+{{#each listings}}
+<p>{{title}}</p>
+{{#if price}}
+<p>{{price}}</p>
+{{^}}
+<p>No Listed price</p>
+{{/if}}
+<p>
+    <a href="{{url}}">Link to post</a>
+</p>
+{{/each}}
