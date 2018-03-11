@@ -19,11 +19,28 @@ These instructions will get you a copy of the project up and running on your loc
 
 * `npm i`
 
+Create an .env file
+
+``` 
+// .env
+
+DB_USERNAME=xxx
+DB_PASSWORD=xxx
+TWILIO_SID=xxx
+TWILIO_TOKEN=xxxx
+TO_SMS=+1xxxxxxx
+FROM_SMS=+1xxxxxx
+
+```
 ### Getting Started
 
 * `npm start`
 
-navigate to localhost:3000 in your browser.
+Navigate to localhost:3000 in your browser.
+
+Enter the city you want to search and the item you are looking for press enter. 
+
+Then you will start to get SMS from the craigslist post that where posted today if you leave the bot running you will get a text every time a new post is uploaded for your search.
 
 ## Style Guide
 
